@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:paddingBottom="10dp">
+
+
+    <TextView
+        android:id="@+id/tvCodBar"
+        android:layout_width="196dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/light_gray"
+        android:fontFamily="@font/francois_one"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvNombreActivo"
+        android:layout_width="168dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/tvCodBar"
+        android:background="@color/light_gray"
+        android:cursorVisible="false"
+        android:fontFamily="@font/francois_one"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvRtaA"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="144dp"
+        android:layout_toEndOf="@+id/tvNombreActivo"
+        android:background="@color/light_gray"
+        android:cursorVisible="false"
+        android:fontFamily="@font/francois_one"
+        android:hint="Tiene"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRtaAC"
+        android:layout_width="117dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/light_gray"
+        android:cursorVisible="false"
+        android:fontFamily="@font/francois_one"
+        android:hint="Tiene"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+        android:textStyle="bold" />
+
+</RelativeLayout>

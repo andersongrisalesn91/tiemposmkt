@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item-->
+        <!--android:id="@+id/menu1"-->
+        <!--android:icon="@android:drawable/ic_menu_rotate"-->
+        <!--android:title="@string/menu1" />-->
+    <item
+        android:id="@+id/menu2"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:title="@string/menu2" />
+    <item
+        android:id="@+id/menu3"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/menu3" />
+    <item
+        android:id="@+id/menu4"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/menu4" />
+    <item
+        android:id="@+id/menu5"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="@string/menu4"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu6"
+        android:icon="@android:drawable/ic_menu_always_landscape_portrait"
+        android:title="@string/menu4"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu7"
+        android:title="@string/menu7"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu8"
+        android:title="@string/menu8"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu9"
+        android:title="@string/menu9"
+        android:visible="false"/>
+
+</menu>

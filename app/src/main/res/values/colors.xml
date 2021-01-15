@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4C42AB</color>
+    <color name="colorPrimaryDark">#453AAB</color>
+    <color name="colorAccent">#8ab140</color>
+    <color name="light_gray">#7eaaaaaa</color>
+    <color name="lighter_gray">#06aaaaaa</color>
+    <color name="light_gray2">#a5a5a5</color>
+    <color name="light_green">#B48AB140</color>
+    <color name="light_purple">#E2713BC9</color>
+    <color name="white">#ffffff</color>
+    <color name="light_gray3">#4caaaaaa</color>
+    <color name="light_gray_prog">#28aaaaaa</color>
+    <color name="fondo_popup">#C88DCE48</color>
+    <color name="blanco_transparente">#D2FFFFFF</color>
+    <color name="azul_lista1">#D5A8BCF4</color>
+    <color name="azul_lista2">#3F48CC</color>
+    <color name="ligth_purple_claro">#AD713BC9</color>
+    <color name="azulletras">#9FACD6</color>
+    <color name="azul_lista3">#324167</color>
+</resources>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="0dp"
+    android:background="@drawable/fondoitemval"
+    android:padding="0dp">
+
+
+    <TextView
+        android:id="@+id/TVNomItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingLeft="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="0dp"
+        android:text="Aqui va el texto de cada item atributo que tenga programado el principal "
+        android:textColor="@color/blanco_transparente"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/TVCodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVNomItem"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="Aqui va el codigo que corresponda"
+        android:textColor="@color/azul_lista1"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/IVLabelT"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/fondoitem2"
+        android:paddingStart="1dp"
+        android:paddingTop="0dp"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/IVLabelV"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/IVLabelT"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/fondoitem2"
+        android:paddingStart="1dp"
+        android:paddingBottom="1dp"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/IVValorT"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/fondoindicadorp"
+        android:paddingStart="1dp"
+        android:paddingTop="1dp"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/IVValorV"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/IVValorT"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/fondoindicadorp"
+        android:paddingStart="1dp"
+        android:paddingBottom="1dp"
+        android:scaleType="center" />
+
+    <ProgressBar
+        android:id="@+id/PBItemLista"
+        style="@style/Widget.ProgressBar.Vertical"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/IVValorV"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="0dp"
+        android:max="100"
+        android:progress="10" />
+
+    <TextView
+        android:id="@+id/TVLabelTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="2dp"
+        android:text="T:"
+        android:textAlignment="center"
+        android:textColor="@color/blanco_transparente"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TVValorHijoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/IVValorT"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="150,32"
+        android:textAlignment="center"
+        android:textColor="@color/blanco_transparente"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TVValorHijoVersus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVValorHijoTotal"
+        android:layout_alignEnd="@+id/IVValorV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginEnd="1dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingTop="0dp"
+        android:paddingBottom="3dp"
+        android:text="122,52"
+        android:textAlignment="center"
+        android:textColor="@color/blanco_transparente"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TVLabelVersus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVLabelTotal"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingLeft="8dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="V:"
+        android:textAlignment="center"
+        android:textColor="@color/blanco_transparente"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:paddingBottom="10dp">
+
+
+    <TextView
+        android:id="@+id/tvNombreSkuCalidad"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="220dp"
+        android:background="@color/light_gray"
+        android:fontFamily="@font/francois_one"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvRtaS"
+        android:layout_width="84dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="383dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="129dp"
+        android:background="@color/light_gray"
+        android:cursorVisible="false"
+        android:fontFamily="@font/francois_one"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvRtaM"
+        android:layout_width="84dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="473dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="38dp"
+        android:background="@color/light_gray"
+        android:cursorVisible="false"
+        android:fontFamily="@font/francois_one"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>

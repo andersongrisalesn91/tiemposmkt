@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondosm"
+    tools:context=".InfoGeneral">
+
+    <ImageView
+        android:id="@+id/BarraPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/fondoitem1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_blanco" />
+
+    <ImageButton
+        android:id="@+id/IBMenu"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/menu_blanco"
+        android:onClick="MenuLateral"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/IBAtras"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/volverblanco"
+        android:onClick="Volver"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/RLDatosSel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/fondoindicadort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarraPrincipal">
+
+        <Button
+            android:id="@+id/BTValidar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVTitulo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btmenu"
+            android:fontFamily="@font/francois_one"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="Validar"
+            android:onClick="validadinfo"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/TVTitulo"
+            android:layout_width="465dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/tituloApp"
+            android:textAlignment="center"
+            android:textColor="@color/blanco_transparente"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TILCMercaderista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVTitulo"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/BTValidar"
+            android:textColor="@color/blanco_transparente"
+            android:textColorHint="@color/blanco_transparente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVTitulo">
+
+            <EditText
+                android:id="@+id/ETCMerc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Codigo de Ruta"
+                android:textColor="@color/blanco_transparente"
+                android:inputType=""
+                android:autofillHints="" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TILNMercaderista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILCMercaderista"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/blanco_transparente"
+            android:textColorHint="@color/blanco_transparente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TILCMercaderista">
+
+            <EditText
+                android:id="@+id/ETNMerc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nombre del mercaderista"
+                android:textColor="@color/blanco_transparente"
+                android:inputType=""
+                android:autofillHints="" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/TVPuntos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILNMercaderista"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="AnadirPunto"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Añadir Punto Nuevo"
+            android:textAlignment="textStart"
+            android:textColor="@color/blanco_transparente"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/IBAgregarPunto"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/TVPuntos"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/common_google_signin_btn_tint"
+            android:contentDescription="TODO"
+            android:onClick="AnadirPunto"
+            android:paddingTop="0dp"
+            android:paddingBottom="10dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/anadir" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLPuntos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/fondolistaitem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RLDatosSel"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

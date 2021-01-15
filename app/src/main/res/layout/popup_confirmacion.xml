@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="@color/blanco_transparente">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fondoitem1"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/textoConfir"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/francois_one"
+            android:hint="Texto de confirmación"
+            android:textColorHint="@color/blanco_transparente"
+            android:textAlignment="center"
+            android:textColor="@color/blanco_transparente"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonSkuNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textoConfir"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btmenu"
+            android:fontFamily="@font/francois_one"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/volver"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonConfSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/buttonSkuNo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/btmenu"
+            android:fontFamily="@font/francois_one"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/confirmar"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>

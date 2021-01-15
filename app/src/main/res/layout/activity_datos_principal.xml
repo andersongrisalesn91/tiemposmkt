@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondosm"
+    tools:context="com.marketteam.desarrollo.tiemposmkt.DatosPrincipal">
+
+    <ImageView
+        android:id="@+id/BarraPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/fondoitem1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scaleType="centerInside"
+        android:onClick="volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_blanco" />
+
+    <ImageButton
+        android:id="@+id/IBMenu"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/menu_blanco"
+        app:layout_constraintBottom_toTopOf="@+id/IVRUTA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/IBAtras"
+        android:layout_width="35dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/volverblanco"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:onClick="volver"
+        app:layout_constraintBottom_toTopOf="@+id/IVRUTA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/TVRUTA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarraPrincipal" />
+
+    <ImageView
+        android:id="@+id/IVRUTA"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/fondoitem1"
+        android:scaleType="centerInside"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/TVRUTA"
+        app:layout_constraintEnd_toEndOf="@+id/TVRUTA"
+        app:layout_constraintStart_toStartOf="@+id/TVRUTA"
+        app:layout_constraintTop_toTopOf="@+id/TVRUTA" />
+
+    <RelativeLayout
+        android:id="@+id/RLDatosSel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/fondoindicadort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVRUTA">
+
+        <RelativeLayout
+            android:id="@+id/RLValores"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TVNombreNivelPrincipal"
+            android:layout_alignBottom="@id/PBDatos"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/fondoindicador"
+
+            android:minHeight="133dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/TVlabelCT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="0dp"
+                android:paddingTop="15dp"
+                android:text="Puntuación"
+                android:textAlignment="center"
+                android:textColor="@color/azulletras"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVValorCT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVlabelCT"
+                android:layout_alignStart="@+id/TVlabelCT"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="125.32"
+                android:textAlignment="center"
+                android:textColor="@color/blanco_transparente"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVLabelMeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVValorCT"
+                android:layout_alignStart="@+id/TVValorCT"
+                android:layout_alignEnd="@+id/TVValorCT"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="0dp"
+                android:text="Metá"
+                android:textAlignment="center"
+                android:textColor="@color/azulletras"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVValorMeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVLabelMeta"
+                android:layout_alignStart="@+id/TVlabelCT"
+                android:layout_alignEnd="@+id/TVLabelMeta"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:paddingBottom="0dp"
+                android:text="160.5"
+                android:textAlignment="center"
+                android:textColor="@color/blanco_transparente"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TVNombreNivelPrincipal"
+            android:layout_width="465dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:paddingTop="10dp"
+            android:text="EURO SUPERMERCADO PALMA GRANDE"
+            android:textAlignment="textStart"
+            android:textColor="@color/blanco_transparente"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TVCodigoNivelPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVNombreNivelPrincipal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:text="10550886"
+            android:textAlignment="textStart"
+            android:textColor="@color/azul_lista1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TVPuntos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVROrden4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+            android:text="Aqui va el texto del indicador  - (SI APLICA)"
+            android:textAlignment="textStart"
+            android:textColor="@color/light_green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TVLabelOrden2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVCodigoNivelPrincipal"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="2dp"
+            android:text="Dir:"
+            android:textColor="@color/azul_lista1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TVLabelOrden3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVROrden2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="2dp"
+            android:text="Info3:"
+            android:textColor="@color/azul_lista1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TVLabelOrden4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVROrden3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="2dp"
+            android:text="Info4:"
+            android:textColor="@color/azul_lista1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TVROrden2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVCodigoNivelPrincipal"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/TVLabelOrden2"
+            android:text="CL 19 38 75"
+            android:textColor="@color/blanco_transparente"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TVROrden3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVROrden2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/TVLabelOrden3"
+            android:text="Aqui se ingresa la información que se registre como orden 3 en la tabla albl"
+            android:textAlignment="textStart"
+            android:textColor="@color/blanco_transparente"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TVROrden4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVROrden3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/TVLabelOrden4"
+            android:text="Aqui se ingresa la información que se registre como orden 4 en la tabla albl"
+            android:textColor="@color/blanco_transparente"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/PBDatos"
+            style="@style/Widget.ProgressBar.Vertical"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/TVIndicador"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/RLValores"
+            android:max="100"
+            android:paddingStart="0dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="2dp"
+            android:paddingBottom="2dp"
+            android:progress="0" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLPuntos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/fondolistaitem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RLDatosSel"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

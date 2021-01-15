@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:paddingBottom="10dp">
+
+
+    <TextView
+        android:id="@+id/tvNombreContEspacio"
+        android:layout_width="363dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="9dp"
+        android:background="@color/light_gray"
+        android:fontFamily="@font/francois_one"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tvRtaCE"
+        android:layout_width="84dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="129dp"
+        android:layout_toEndOf="@+id/tvNombreContEspacio"
+        android:background="@color/light_gray"
+        android:enabled="false"
+        android:fontFamily="@font/francois_one"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tvCant"
+        android:layout_width="101dp"
+        android:layout_height="38dp"
+        android:layout_alignStart="@+id/tvRtaCE"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="17dp"
+        android:background="@color/light_gray"
+        android:fontFamily="@font/francois_one"
+        android:hint="0"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

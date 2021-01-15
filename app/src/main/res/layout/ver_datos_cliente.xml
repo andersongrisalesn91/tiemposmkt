@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tableLayoutcliente"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/francois_one"
+            android:text="IdCliente:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvIdCliente"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:fontFamily="@font/francois_one"
+            android:hint="IdCliente"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/francois_one"
+            android:text="Nom. Establec.:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etNomEstb"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/francois_one"
+            android:hint="Nombre establecimiento"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/imgbEstab"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/lapiz_opt" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/francois_one"
+            android:text="Propietario:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etNomProp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/francois_one"
+            android:hint="Nombre propietario"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/imgbPropie"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/lapiz_opt" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/francois_one"
+            android:text="Dirección:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etDirecc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/francois_one"
+            android:hint="Dirección"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/imgbDirecc"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/lapiz_opt" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/francois_one"
+            android:text="Barrio:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etBarrio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/francois_one"
+            android:hint="Barrio"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/imgbBarrio"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/lapiz_opt" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/francois_one"
+            android:text="Teléfono:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/francois_one"
+            android:hint="Teléfono del establecimiento"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/imgbTelefono"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/lapiz_opt" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/francois_one"
+            android:text="Correo:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etCorreoE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/francois_one"
+            android:hint="Correo electrónico"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/imgbCorreo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/lapiz_opt" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/francois_one"
+            android:text="Canal:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerCanalDC"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <ImageButton
+            android:id="@+id/imgbCanal"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/lapiz_opt" />
+    </TableRow>
+
+    <TableRow android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/francois_one"
+            android:text="SubCanal:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerSubCanalDC"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <ImageButton
+            android:id="@+id/imgbSubC"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/lapiz_opt" />
+    </TableRow>
+
+</TableLayout>

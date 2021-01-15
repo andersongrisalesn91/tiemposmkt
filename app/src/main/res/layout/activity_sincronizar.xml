@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.marketteam.desarrollo.tiemposmkt.Sincronizar">
+
+    <ImageButton
+        android:id="@+id/ibMenu5"
+        android:layout_width="105dp"
+        android:layout_height="65dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_fondo" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="185dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="210dp"
+        android:background="@drawable/btn_fondo"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logop" />
+
+    <ImageButton
+        android:id="@+id/ibValidaciones"
+        android:layout_width="105dp"
+        android:layout_height="65dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/ivLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_fondo" />
+
+    <ImageButton
+        android:id="@+id/ibCerrarSesion"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:background="@android:color/transparent"
+        android:onClick="irselcuest"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ibValidaciones"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_salir" />
+
+    <ImageView
+        android:id="@+id/ivTitulo2"
+        android:layout_width="616dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/btn_fondo"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_sincronizar" />
+
+    <ImageButton
+        android:id="@+id/ibTipoA"
+        android:layout_width="105dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="105dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_fondo" />
+
+    <TextView
+        android:id="@+id/tVTT14"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="TV:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/tVTNT7"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT12" />
+
+    <TextView
+        android:id="@+id/tVTNT14"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tVTT14"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT12" />
+
+    <TextView
+        android:id="@+id/tVTotalSS2"
+        android:layout_width="284dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Fotos Capturadas:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTotalSS3"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tVTotalFCN"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="132dp"
+        android:fontFamily="@font/aclonica"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tVTotalSS2"
+        app:layout_constraintTop_toBottomOf="@+id/tVTotalFSSN"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tVTotalSS3"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Fotos Pendientes:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarTF"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tVTotalFSSN"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/aclonica"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tVTotalSS3"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarTF"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tVTT12"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="TF:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/tVTNT5"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT11" />
+
+    <TextView
+        android:id="@+id/tVTNT12"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tVTT12"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT11" />
+
+    <TextView
+        android:id="@+id/tVTT10"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="T10:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/tVTNT3"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT9" />
+
+    <TextView
+        android:id="@+id/tVTT11"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="T11:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/tVTNT4"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT10" />
+
+    <TextView
+        android:id="@+id/tVTNT11"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tVTT11"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT10" />
+
+    <TextView
+        android:id="@+id/tVTNT10"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tVTT10"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT9" />
+
+    <TextView
+        android:id="@+id/tVTT9"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="T9:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/tVTNT2"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT8" />
+
+    <TextView
+        android:id="@+id/tVTT8"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="T8:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/tVTNT1"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT6" />
+
+    <TextView
+        android:id="@+id/tVTNT8"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tVTT8"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT6" />
+
+    <TextView
+        android:id="@+id/tVTNT9"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tVTT9"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT8" />
+
+    <TextView
+        android:id="@+id/tVTNT6"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tVTT6"
+        app:layout_constraintTop_toBottomOf="@+id/tVTotalSS4" />
+
+    <TextView
+        android:id="@+id/tVTT6"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ewert"
+        android:text="T7:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/tVTNT"
+        app:layout_constraintTop_toBottomOf="@+id/tVTotalSS4" />
+
+    <TextView
+        android:id="@+id/tVTNT"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tVTT"
+        app:layout_constraintTop_toBottomOf="@+id/tVTotalSS4" />
+
+    <TextView
+        android:id="@+id/tVTT"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="T1:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTotalSS4" />
+
+    <TextView
+        android:id="@+id/tVTNT2"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tVTT2"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT1" />
+
+    <TextView
+        android:id="@+id/tVTT2"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="T3:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT1" />
+
+    <TextView
+        android:id="@+id/tVTNT3"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tVTT3"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT2" />
+
+    <TextView
+        android:id="@+id/tVTT3"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="T4:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT2" />
+
+    <TextView
+        android:id="@+id/tVTNT4"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tVTT4"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT3" />
+
+    <TextView
+        android:id="@+id/tVTT4"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="T5:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT3" />
+
+    <TextView
+        android:id="@+id/tVTNT5"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tVTT5"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT4" />
+
+    <TextView
+        android:id="@+id/tVTNT7"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tVTT7"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT5" />
+
+    <TextView
+        android:id="@+id/tVTT5"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="T6:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT4" />
+
+    <TextView
+        android:id="@+id/tVTT7"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="TR:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT5" />
+
+    <TextView
+        android:id="@+id/tVTNT1"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tVTT1"
+        app:layout_constraintTop_toBottomOf="@+id/tVTNT" />
+
+    <TextView
+        android:id="@+id/tVTT1"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ewert"
+        android:text="T2:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTT" />
+
+    <Button
+        android:id="@+id/buttonSincronizar2"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btmenuop"
+        android:fontFamily="@font/francois_one"
+        android:onClick="sincronizar"
+        android:text="Sincronizar datos"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTitulo2" />
+
+    <Button
+        android:id="@+id/buttonSincronizar3"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="448dp"
+        android:background="@drawable/btmenuop"
+        android:fontFamily="@font/francois_one"
+        android:onClick="sincronizarF"
+        android:text="Sincronizar fotos"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSincronizar2" />
+
+    <TextView
+        android:id="@+id/tVTotalSS"
+        android:layout_width="248dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Por Sincronizar:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSincronizar2"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tVTotalSS4"
+        android:layout_width="249dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Enc Realizadas:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTotalSS"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tVTotalSSN"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tVTotalSS"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSincronizar2"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tVTotalFN"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="@font/aclonica"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/tVTotalSS4"
+        app:layout_constraintTop_toBottomOf="@+id/tVTotalSSN"
+        tools:textColor="@color/colorPrimary" />
+
+    <ProgressBar
+        android:id="@+id/progressBarTF"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="249dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:progress="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSincronizar3" />
+
+    <ImageView
+        android:id="@+id/ivFotosSinc"
+        android:layout_width="49dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toEndOf="@+id/progressBarTF"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSincronizar3"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+</android.support.constraint.ConstraintLayout>
